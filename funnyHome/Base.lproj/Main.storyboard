@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +15,142 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ad9-2C-Ik1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="under.png" translatesAutoresizingMaskIntoConstraints="NO" id="TA2-nb-WU8">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3F-d1-Xrf">
+                                <rect key="frame" x="241" y="483" width="65" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="settei.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="settei" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1t4-PB-FXv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="4So-Cf-PzD">
+                                <rect key="frame" x="165.5" y="21" width="66" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="masse.png" translatesAutoresizingMaskIntoConstraints="NO" id="V8X-mT-sSh">
+                                <rect key="frame" x="15.5" y="21.5" width="63" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-pu-uAK">
+                                <rect key="frame" x="242" y="23" width="62" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tenki.png" translatesAutoresizingMaskIntoConstraints="NO" id="6hx-OY-CBN">
+                                <rect key="frame" x="88" y="108" width="68" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="ehR-Vx-TIX">
+                                <rect key="frame" x="14" y="112" width="64" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contacts.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-Bz-LzM">
+                                <rect key="frame" x="89" y="22" width="66" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Maps.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUa-5X-1nB">
+                                <rect key="frame" x="167" y="109" width="64" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Notes.png" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-lI-kMw">
+                                <rect key="frame" x="241" y="106" width="64" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FaceTime.png" translatesAutoresizingMaskIntoConstraints="NO" id="z28-cI-m4v">
+                                <rect key="frame" x="240" y="197" width="68" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="passbook.png" translatesAutoresizingMaskIntoConstraints="NO" id="DGF-tl-TZV">
+                                <rect key="frame" x="164" y="196" width="68" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Calculator.png" translatesAutoresizingMaskIntoConstraints="NO" id="kGL-Ru-qhg">
+                                <rect key="frame" x="89" y="197" width="68" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="wyL-oA-S6u">
+                                <rect key="frame" x="11" y="198" width="68" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameCenter.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-9R-nDX">
+                                <rect key="frame" x="9" y="286" width="78" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Newsstand.png" translatesAutoresizingMaskIntoConstraints="NO" id="OMJ-ks-HXX">
+                                <rect key="frame" x="85.5" y="285.5" width="71" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Music.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ica-ty-QJx">
+                                <rect key="frame" x="15" y="484" width="63" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Safari.png" translatesAutoresizingMaskIntoConstraints="NO" id="xsq-J2-Ma5">
+                                <rect key="frame" x="91" y="482" width="63" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="MiY-1C-ZQE">
+                                <rect key="frame" x="167" y="483" width="63" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="calculatorIcon" destination="kGL-Ru-qhg" id="8QT-gr-8Cg"/>
+                        <outlet property="calendarIcon" destination="ehR-Vx-TIX" id="SE4-sv-RHD"/>
+                        <outlet property="cameraIcon" destination="4So-Cf-PzD" id="lyy-Sd-xEo"/>
+                        <outlet property="compassIcon" destination="wyL-oA-S6u" id="QI0-8u-kWs"/>
+                        <outlet property="contactsIcon" destination="yBA-Bz-LzM" id="oYa-ej-0D7"/>
+                        <outlet property="faceTimeIcon" destination="z28-cI-m4v" id="axk-L0-AdM"/>
+                        <outlet property="gameIcon" destination="a3N-9R-nDX" id="IGa-qd-cca"/>
+                        <outlet property="haikei" destination="Ad9-2C-Ik1" id="b7u-HE-1Fm"/>
+                        <outlet property="mapsIcon" destination="NUa-5X-1nB" id="JMj-x0-8hU"/>
+                        <outlet property="messeIcon" destination="V8X-mT-sSh" id="drb-Hb-z0u"/>
+                        <outlet property="musicIcon" destination="Ica-ty-QJx" id="oZC-B3-9cx"/>
+                        <outlet property="newsIcon" destination="OMJ-ks-HXX" id="QFh-xB-RZS"/>
+                        <outlet property="notesIcon" destination="VPe-lI-kMw" id="6ck-5N-9qT"/>
+                        <outlet property="passbookIcon" destination="DGF-tl-TZV" id="mzz-cN-Pdm"/>
+                        <outlet property="phoneIcon" destination="MiY-1C-ZQE" id="c8g-C4-1MT"/>
+                        <outlet property="photoIcon" destination="Bei-pu-uAK" id="Bfm-54-nZp"/>
+                        <outlet property="safariIcon" destination="xsq-J2-Ma5" id="NCo-Oo-enj"/>
+                        <outlet property="tenkiIcon" destination="6hx-OY-CBN" id="6Sw-c9-8IF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calculator.png" width="133" height="165"/>
+        <image name="Calendar.png" width="130" height="155"/>
+        <image name="Compass.png" width="135" height="165"/>
+        <image name="Contacts.png" width="132" height="161"/>
+        <image name="FaceTime.png" width="133" height="158"/>
+        <image name="GameCenter.png" width="154" height="167"/>
+        <image name="Maps.png" width="125" height="161"/>
+        <image name="Music.png" width="123" height="156"/>
+        <image name="Newsstand.png" width="144" height="169"/>
+        <image name="Notes.png" width="128" height="159"/>
+        <image name="Phone.png" width="126" height="159"/>
+        <image name="Safari.png" width="122" height="157"/>
+        <image name="camera.png" width="129" height="157"/>
+        <image name="masse.png" width="126" height="159"/>
+        <image name="passbook.png" width="135" height="165"/>
+        <image name="photo.png" width="124" height="161"/>
+        <image name="settei.png" width="127" height="163"/>
+        <image name="tenki.png" width="133" height="164"/>
+        <image name="under.png" width="640" height="1136"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
